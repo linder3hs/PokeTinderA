@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862F092C2853DCF90088E9AF /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F092B2853DCF90088E9AF /* LaunchViewModel.swift */; };
+		862F092F2853E29A0088E9AF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F092E2853E29A0088E9AF /* CardView.swift */; };
+		862F09312853EBA90088E9AF /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F09302853EBA90088E9AF /* HomeButtonView.swift */; };
 		86619755284D87C1006E7326 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86619754284D87C1006E7326 /* ContentView.swift */; };
 		86619757284D87C3006E7326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86619756284D87C3006E7326 /* Assets.xcassets */; };
 		8661975A284D87C3006E7326 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86619759284D87C3006E7326 /* Preview Assets.xcassets */; };
@@ -19,7 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8661974F284D87C1006E7326 /* iOSAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		862F092B2853DCF90088E9AF /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		862F092E2853E29A0088E9AF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		862F09302853EBA90088E9AF /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
+		8661974F284D87C1006E7326 /* Poke Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke Tinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86619754284D87C1006E7326 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86619756284D87C3006E7326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86619759284D87C3006E7326 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -42,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862F092D2853E28A0088E9AF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				862F092E2853E29A0088E9AF /* CardView.swift */,
+				862F09302853EBA90088E9AF /* HomeButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		86619746284D87C1006E7326 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +68,7 @@
 		86619750284D87C1006E7326 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8661974F284D87C1006E7326 /* iOSAppTemplate.app */,
+				8661974F284D87C1006E7326 /* Poke Tinder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +76,7 @@
 		86619751284D87C1006E7326 /* iOSAppTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				862F092D2853E28A0088E9AF /* Components */,
 				8661976D284D8E6B006E7326 /* Main */,
 				8661976C284D8E65006E7326 /* Launch */,
 				8661976B284D8DA2006E7326 /* Assets */,
@@ -92,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8661976F284D8EA8006E7326 /* HomeViewModel.swift */,
+				862F092B2853DCF90088E9AF /* LaunchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -147,7 +164,7 @@
 			);
 			name = iOSAppTemplate;
 			productName = iOSAppTemplate;
-			productReference = 8661974F284D87C1006E7326 /* iOSAppTemplate.app */;
+			productReference = 8661974F284D87C1006E7326 /* Poke Tinder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -202,10 +219,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				86619766284D88DE006E7326 /* AppState.swift in Sources */,
+				862F09312853EBA90088E9AF /* HomeButtonView.swift in Sources */,
 				86619772284D8F10006E7326 /* LaunchView.swift in Sources */,
+				862F092C2853DCF90088E9AF /* LaunchViewModel.swift in Sources */,
 				86619755284D87C1006E7326 /* ContentView.swift in Sources */,
 				86619768284D8929006E7326 /* Model.swift in Sources */,
 				8661976A284D8ACF006E7326 /* MyApp_iOSApp.swift in Sources */,
+				862F092F2853E29A0088E9AF /* CardView.swift in Sources */,
 				86619770284D8EA8006E7326 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,11 +370,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.iOSAppTemplate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.poketinder;
+				PRODUCT_NAME = "Poke Tinder";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -381,11 +401,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.iOSAppTemplate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.poketinder;
+				PRODUCT_NAME = "Poke Tinder";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
