@@ -5,7 +5,7 @@
 //  Created by Linder Anderson Hassinger Solano    on 10/06/22.
 //
 
-import Foundation
+import FirebaseAuth
 
 class LaunchViewModel: ObservableObject {
     
@@ -18,7 +18,7 @@ class LaunchViewModel: ObservableObject {
     init() {
 //        Recurden que normalmente antes de hacer esto se hacen las peticiones
 //        iniciales
-        appState.currentScreen = .home
+        appState.currentScreen = Auth.auth().currentUser != nil ? .main : .login
     }
     
 }
